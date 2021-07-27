@@ -22,9 +22,14 @@
 
 img{
     width:70%;
+    position:relative;
 }
 
 h1{
+    position: absolute;  
+    left: 25%;                        /* horizontal alignment */
+    top: 15%;                         /* vertical alignment */
+    transform: translate(-50%, -50%);
     color:white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: center;
@@ -37,6 +42,14 @@ p{
     justify-content: center;
     font-size:1.5rem;
 }
+
+.absolute{
+    position: absolute;  
+    left: 25%;                        /* horizontal alignment */
+    top: 21%;                         /* vertical alignment */
+    transform: translate(-50%, -50%);
+}
+
 
 .image{
     display:flex;
@@ -131,7 +144,7 @@ margin-right: 10px;
         height:70vh;
     }
     img{
-        width:30%
+        width:42%
     }
     .form-container{
         display: flex;
@@ -147,5 +160,57 @@ margin-right: 10px;
         flex-direction: column;
         width:80%;
         margin:0 auto;
+    }
+    .absolute{
+        position: absolute;  
+        left: 50%;                        /* horizontal alignment */
+        top: 21%;                         /* vertical alignment */
+        transform: translate(-50%, -50%);
+    }
+    h1{
+        position: absolute;  
+        left: 50%;                        /* horizontal alignment */
+        top: 13%;                         /* vertical alignment */
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 358px){
+    .container-geral{
+        flex-direction: column;
+    }
+    .image{
+        width:100%;
+        height:70vh;
+    }
+    img{
+        width:70%
+    }
+    .form-container{
+        display: flex;
+        justify-content: center;
+        width:100%;
+    }
+    .container-1{
+        width:95%;
+        justify-content: center;
+    }
+    .form{
+        display:flex;
+        flex-direction: column;
+        width:80%;
+        margin:0 auto;
+    }
+    .absolute{
+        position: absolute;  
+        left: 50%;                        /* horizontal alignment */
+        top: 26%;                         /* vertical alignment */
+        transform: translate(-50%, -50%);
+    }
+    h1{
+        position: absolute;  
+        left: 50%;                        /* horizontal alignment */
+        top: 13%;                         /* vertical alignment */
+        transform: translate(-50%, -50%);
     }
 }
